@@ -1,4 +1,4 @@
-import random
+mport random
 import string
 
 
@@ -10,10 +10,6 @@ special = "!@£$%^&*[]{}"
 content = letters + special + numerical
 long = 25
 
-password = ''.join(random.sample(content, long))
+password = str().join(random.sample(content, long))
 
 print(f"The random password is", password)
-
-
-
-
