@@ -1,15 +1,15 @@
-mport random
+import random
 import string
 
 
-numerical = string.digits
-letters = string.ascii_letters
-special = "!@£$%^&*[]{}"
+num = string.digits
+let = string.ascii_letters
+spec = "!@£$%^&*[]{}"
 
 
-content = letters + special + numerical
+content = num + spec + let
 long = 25
 
 password = str().join(random.sample(content, long))
 
-print(f"The random password is", password)
+print(f"The randomly generated password is", password)
